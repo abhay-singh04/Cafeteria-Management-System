@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeteria Management System | Register</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Fredoka One', sans-serif;
+            background: url('bg.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background: rgba(239, 183, 168, 0.45);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+            width: 340px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            background: linear-gradient(45deg, #f5c556, #f85252);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            color: white;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-family: 'Fredoka One', sans-serif;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .extra {
+            margin-top: 15px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .extra a {
+            color: #f5c556;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-container">
+    <h1>User Register</h1>
+
+    <form onsubmit="return registerUser()">
+        <div class="input-box">
+            <label>Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" required>
+        </div>
+
+        <button type="submit">Register</button>
+
+        <div class="extra">
+            Already have an account? <a href="login.html">Login here</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function registerUser() {
+        alert("Registration Successful!");
+        window.location.href = "login.html";
+        return false;
+    }
+</script>
+
+</body>
+</html>
